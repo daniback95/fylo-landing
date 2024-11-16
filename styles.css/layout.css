@@ -88,10 +88,51 @@ body {
         height: 2.5rem;
         border: none;
         border-radius: .5rem;
-        color: var(--Light-grayish-blue);
+        color: var(--white);
         font-family: var(--font-primary);
         font-weight: 700;
         background-color: var(--bright-blue);
+      }
+    }
+  }
+
+  @media screen and (width >= 48rem) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block-start: initial;
+
+      .image {
+      order: 1;
+      width: 45%;
+      max-width: 31.25rem;
+      margin: initial;
+    }
+
+    .info {
+      width: 45%;
+      max-width: 586px;
+      text-align: initial;
+
+      > h1 {
+        font-size: 2rem;
+      }
+
+      .form {
+        flex-direction: initial;
+
+        > input, 
+        > button {
+          flex-basis: 200px;
+        }
+
+        > input {
+          flex-grow: 1;
+        }
+
+        > button {
+          flex-grow: 0;
+        }
       }
     }
   }
