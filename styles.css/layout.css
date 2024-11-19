@@ -132,6 +132,15 @@ body {
 
         > button {
           flex-grow: 0;
+          cursor: pointer;
+          transition: 
+          background-color .5s,
+          color .5s;
+
+          &:hover {
+            color: var(--very-dark-blue);
+            background-color: var(--bright-blue-hover);
+          }
         }
       }
     }
@@ -284,6 +293,10 @@ body {
 
         .productive__cta {
           margin-inline: 0;
+
+          &:hover {
+            color: var(--moderate-cyan-hover);
+          }
         }
       }
 
@@ -373,6 +386,14 @@ body {
 
         > button {
           max-width: 200px;
+          cursor: pointer;
+          transition: 
+            color .3s,
+            background-color .3s;
+          &:hover {
+            color: var(--very-dark-blue);
+            background-color: var(--bright-blue-hover);
+          }
         }
       }
     }
@@ -458,6 +479,24 @@ body {
             > figure {
               filter: invert(1);
             }
+          }
+        }
+
+        .footer-nav__about > a:hover, 
+        .footer-nav__terms > a:hover, 
+        .footer-nav__social > a:hover {
+          transition: color .3s;
+          &:has(figure) {
+            transition: border-color .3s;
+          }
+        }
+
+        .footer-nav__about > a:hover, 
+        .footer-nav__terms > a:hover, 
+        .footer-nav__social > a:hover {
+          color: var(--bright-blue);
+          &:has(figure) {
+            border-color: var(--bright-blue);
           }
         }
       }

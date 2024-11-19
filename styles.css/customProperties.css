@@ -12,6 +12,9 @@
   --Light-grayish-blue: hsl(240, 75%, 98%);
   --light-gray: hsl(0, 0%, 75%);
   --white: hsl(0, 0%, 100%);
+  --bright-blue-hover: hsl(221, 100%, 71%);
+  --moderate-cyan-hover: hsl(169, 60%, 67%);
+  
 
   /* Fonts */
   --font-primary: 'Raleway';
